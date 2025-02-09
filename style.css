@@ -21,6 +21,7 @@
 
 body {
   background-image: linear-gradient(to right, var(--secondary-color), var(--terciary-color));
+  overflow-x: hidden;
 }
 
 header {
@@ -100,4 +101,8 @@ main {
   filter: blur(0);
   transform: translateX(0);
   transition: all 2s;
+}
+
+h3 {
+  text-align: center;
 }
