@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+
+
+
+:root {
+  --primary-color: #F2F2F2;
+  --secondary-color: #F28D95;
+  --terciary-color: #da50b1;
+  --font-size: 16px;
+  --color-text: rgb(17, 16, 16);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: 'Lovers Quarrel';
+  color: var(--color-text);
+}
+
+body {
+  background-image: linear-gradient(to right, var(--secondary-color), var(--terciary-color));
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-weight: 600;
+}
+
+header p, h3 {
+  font-size: 1.5rem;
+}
+
+.container {
+  height: 100%;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.polaroid {
+  border: 3px solid var(--terciary-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.536);
+}
+
+.polaroid .img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.polaroid h2 {
+  font-weight: bolder;
+}
+
+.polaroid .img {
+  border: 1px solid black;
+  height: 450px;
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(200px); /* Inicializa fora da tela */
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
+}
